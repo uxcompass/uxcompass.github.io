@@ -1,0 +1,35 @@
+// HEADER
+
+h1 {
+  display: inline-block;
+
+  &:before {
+    content: "It's a work in progress...";
+    color: $c-white;
+    font-size: 1rem;
+    font-weight: normal;
+    position: absolute;
+    top: -50%;
+  }
+
+  &:after {
+    background: $c-black;
+    content: "\00a0";
+    display: block;
+    height: 10px;
+    width: 10%;
+  }
+  &:hover{
+    color: $c-white;
+
+    &:before {
+      transition: all .5s ease-out;
+      top: 0;
+    }
+
+    &:after {
+      transition: all .6s ease-in-out;
+      width: 100%;
+    }
+  }
+}

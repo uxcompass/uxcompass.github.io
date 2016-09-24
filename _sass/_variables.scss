@@ -47,7 +47,7 @@ $c-state-warning:       #F5F4D7;
 $c-state-error:         #faa;
 $c-state-success:       #faa;
 
-$c-highlight:           #f4ff6f;
+$c-highlight:           transparentize($c-link,.8);
 
 /*
 FONTS & TYPOGRAPHY
@@ -64,7 +64,6 @@ $font-largest:          $font-larger*1.3;
 $font-weight-light:     300;
 $font-weight-normal:    400;
 $font-weight-medium:    500;
-
 
 /*
 SPACING

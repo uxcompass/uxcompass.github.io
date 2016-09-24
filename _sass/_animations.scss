@@ -1,7 +1,7 @@
 
 @mixin animated() {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -25,4 +25,30 @@
 
 .fadeInUp {
   @include fadeInUp();
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@mixin fadeInDown {
+  @include animated();
+  animation-name: fadeInDown;
+}
+
+.fadeInDown {
+  @include fadeInDown();
+}
+
+.delay-short {
+  animation-delay: .5s;
 }

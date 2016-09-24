@@ -57,16 +57,6 @@ input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
-body, input, p {
-  color: $c-gray800;
-  font-size: 1em;
-  font-weight: 300;
-  font-family: 'Open Sans', 'Roboto', 'Helvetica', 'Helvetica Neue', sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  line-height: $line-height;
-  margin: 0;
-}
 
 /*
 INDIVIDUAL SELECTORS
@@ -124,7 +114,9 @@ b {
 blockquote {
 
 }
-body{
+body {
+  height: 100%;
+  margin: 0;
   position: relative;
 }
 button{
@@ -207,8 +199,8 @@ figure {
 
 }
 footer {
-  background: $c-gray200;
   padding: $spacing-loosest 0;
+  position: relative;
 }
 form{
 
@@ -227,7 +219,13 @@ h6{
   margin-bottom: $spacing;
 }
 h1 {
-  font-size: $font-largest;
+  color: transparentize($c-white,0.5);
+  font-size: $font-large;
+  margin: 6rem 0;
+
+  @include media-min($screen-medium) {
+    font-size: 8rem;
+  }
 }
 
 h2 {
@@ -262,14 +260,26 @@ h6 {
   }
 }
 header {
-
+  position: relative;
 }
 hr {
   box-sizing: content-box;
-  height: 0;
+  border: 0;
+  height: 60px;
+  
+  &:after {
+    background: transparentize($c-black, .5);
+    content: '\00a0';
+    display: block;
+    height: 2px;
+    position: relative;
+    top: 29px;
+  }
 }
 html {
-
+  background: #1b1b1b;
+  color: $c-white !important;
+  height: 100%;
 }
 
 // I
@@ -379,7 +389,7 @@ mark {
 
 }
 main {
-  margin: $spacing-looser auto;
+  position: relative;
 }
 menu {
 
@@ -409,6 +419,7 @@ optgroup {
 //------------------------------------------------------
 //------------------------------------------------------
 p {
+  color: $c-white;
   margin-bottom: $spacing;
 }
 pre {
