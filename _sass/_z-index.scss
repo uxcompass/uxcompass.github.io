@@ -1,0 +1,22 @@
+/*
+All Z-indexes should be managed here
+*/
+
+@mixin z-index($z, $position: relative){
+  position: $position;
+  z-index: $z;
+}
+
+// 4 - HIGHEST
+
+// 3
+.nav-mobile { @include z-index(3, absolute) }
+
+// 2
+.overlay { @include z-index(2, absolute) };
+
+// 1
+
+// 0 - LOWEST
+
+// -1 - Background stuff
