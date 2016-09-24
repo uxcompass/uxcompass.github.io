@@ -2,16 +2,10 @@
 {% capture location %}{{ page.url | split:'/' }}{% endcapture %}
 <header class="site-header">
 
-  <div class="wrapper">
+  <div class="container">
 
     <a id="logo" class="logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-      <!-- To add pages to the main nav, add nav_header: true to the YAML Front Matter -->
-      <h2 id="menu_title" class="menu-title">Menu</h2>
-      <button id="btn_menu" class="btn-menu" data-mobile="true">Menu
-        <svg class="icon link"><use xlink:href="#ic-menu"/></svg>
-      </button>
-      {% include nav-header.html %}
+    {% include nav-header.html %}
 
   </div>
 </header>

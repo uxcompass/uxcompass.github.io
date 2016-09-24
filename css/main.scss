@@ -9,20 +9,17 @@
 // UTILS AND CORE COMPONENTS
 
 "_variables",
-"bourbon/_bourbon",
-"neat/_neat",
 "_mixins",
 "_animations",
 "_html-elements",
-"_modifiers",
+"_grid",
 "_syntax-highlighting",
 "_header",
 "_footer",
-"_z-index",
+"_z-index";
 
 // PAGES STYLES
 
-"blog";
 
 // Hide anything mobile specific
 @include media-min($screen-medium) {
