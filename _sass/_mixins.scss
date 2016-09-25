@@ -49,9 +49,7 @@
   border: 1px solid $color;
 }
 
-
 // M
-
 @mixin media-min($size) {
   @media screen and (min-width: $size) {
     @content;

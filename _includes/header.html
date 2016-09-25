@@ -1,10 +1,11 @@
 <!-- Capture and store URL -->
 {% capture location %}{{ page.url | split:'/' }}{% endcapture %}
-<header class="site-header">
+<!--<div class="bg blur u-z0"></div>-->
+
+<header class="site-header u-z1">
 
   <div class="container">
 
-    <a id="logo" class="logo" href="{{ site.baseurl }}/">{{ site.title }}</a>
     {% include nav-header.html %}
 
   </div>
