@@ -6,3 +6,15 @@
     z-index: #{$i} !important;
   }
 }
+
+.u-block {
+  display: block;
+}
+
+.u-spacer {
+  margin: $spacing;
+}
+
+.u-width-50 {
+  width: 50%;
+}

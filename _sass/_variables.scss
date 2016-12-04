@@ -20,6 +20,8 @@ COLORS
 $c-black:               #000;
 $c-white:               #fff;
 
+$c-red:                 #B11623;
+
 $c-gray800:             lighten($c-black, 2%);
 $c-gray700:             lighten($c-black, 20%);
 $c-gray600:             lighten($c-black, 34%);
@@ -53,17 +55,19 @@ $c-highlight:           transparentize($c-link,.8);
 FONTS & TYPOGRAPHY
 */
 
+$font-serif:            'Forum';
+$font-sans-serif:       'Lato';
+
 $font-nrml-size:        1em;
-$font-small:            $font-nrml-size/1.2; // Golden rule is too much here
-$font-smaller:          $font-small/1.2;
-$font-smallest:         $font-smaller/1.2;
-$font-large:            $font-nrml-size*1.3;
-$font-larger:           $font-large*1.3;
-$font-largest:          $font-larger*1.3;
+$font-small:            .75em;
+$font-large:            1.333em;
+$font-larger:           1.777em;
+$font-largest:          2.369em;
+$font-huge:             3.157em;
 
 $font-weight-light:     300;
 $font-weight-normal:    400;
-$font-weight-medium:    500;
+$font-weight-medium:    700;
 
 /*
 SPACING
@@ -76,7 +80,7 @@ $spacing-loose:         32px;
 $spacing-looser:        48px;
 $spacing-loosest:       64px;
 
-$line-height:           $font-nrml-size*$golden-rule;
+$line-height:           1.45;
 
 // 1260px as ems
 $max-width:             78.75rem;

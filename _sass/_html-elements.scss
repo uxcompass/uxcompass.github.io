@@ -115,7 +115,6 @@ blockquote {
 
 }
 body {
-  height: 100%;
   margin: 0;
   position: relative;
 }
@@ -215,37 +214,7 @@ h3,
 h4,
 h5,
 h6{
-  line-height: $line-height;
-  margin-bottom: $spacing;
-}
-h1 {
-  color: transparentize($c-white,0.5);
-  font-size: $font-large;
-  margin: 6rem 0;
-
-  @include media-min($screen-medium) {
-    font-size: 8rem;
-  }
-}
-
-h2 {
-  font-size: $font-larger;
-}
-
-h3 {
-  font-size: $font-large;
-}
-
-h4 {
-  font-size: $font-nrml-size;
-}
-
-h5 {
-
-}
-
-h6 {
-
+  margin: 0;
 }
 // Make sure our H's aren't too big on those lil' devices
 @include media-max($screen-medium){
@@ -277,9 +246,7 @@ hr {
   }
 }
 html {
-  background: #1b1b1b;
-  color: $c-white !important;
-  height: 100%;
+
 }
 
 // I
@@ -370,7 +337,6 @@ kbd {
 //------------------------------------------------------
 label {
   display: block;
-  font-size: $font-smaller;
   margin: spacing 0 spacing-tight;
   text-transform: uppercase;
 }
@@ -419,8 +385,7 @@ optgroup {
 //------------------------------------------------------
 //------------------------------------------------------
 p {
-  color: $c-white;
-  margin-bottom: $spacing;
+
 }
 pre {
   overflow: auto;
