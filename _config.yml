@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   UX Copmpass is a work in progress...
 
 host: "startersite.dev"
-#baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
 permalink: pretty
 exclude: [node_modules, gulpfile.js]
 
@@ -16,16 +16,17 @@ port: 8080
 markdown: kramdown
 jquery_version: 1.11.3
 modernizr:  true
+post_dirs: true
 
 # Site defaults
 defaults:
   -
     scope:
-      path: ""
+      path: "/blog/"
       type: "posts"
     values:
       layout: "post"
-      author: "YOUR NAME"
+      author: "Chris Roy"
   -
     scope:
       path: ""
