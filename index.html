@@ -3,10 +3,14 @@ title: UX C&oslash;mpass
 id: home
 ---
 
-<h2 class="fadeInDown u-width-50 animation-delay-short animation-slow">UX Compass is a site dedicated to exploring the field of <span class="highlight-text">User Experience</span> within the travel industry.</h2>
+<div class="row">
 
-<p class="fadeInDown animation-delay-long animation-slow u-width-50">We're just getting things started, so please bear with us while we get some resources together. If you would like to contribute, please get in touch via our <a href="http://github.com/uxcompass">Github</a> page.</p>
+  <h2 class="fadeInDown col l7 animation-delay-short animation-slow">UX Compass is a site dedicated to exploring the field of <span class="highlight-text">User Experience</span> within the travel industry.</h2>
+
+  <p class="fadeInDown animation-delay-long animation-slow col l7">We're just getting things started, so please bear with us while we get some resources together. If you would like to contribute, please get in touch via our <a href="http://github.com/uxcompass">Github</a> page.</p>
+
+</div>
 
 {% for post in site.posts limit:1 %}
-  <a href="{{ post.url }}">Latest article: {{ post.title }}</a>
+<a href="{{ post.url }}">Latest article: {{ post.title }}</a>
 {% endfor %}
