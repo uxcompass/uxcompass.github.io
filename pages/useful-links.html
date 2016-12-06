@@ -1,0 +1,31 @@
+---
+title: Useful links
+permalink: /useful-links/
+---
+
+<ul>
+{% for section in site.data.links %}
+  <h2>{{ section[0] }}</h2>
+
+  {% assign link_array = section[1] %}
+  {% for link in link_array %}
+  {% assign tags = link.tags %}
+  <li
+      {% if link.tags %}
+        data-tag="{% for tag in tags %}{{ tag | downcase }} {% endfor %}"
+      {% endif %}
+  >
+    <a href="{{ link.url }}">{{ link.title }}</a>
+    <p>{{ link.description }}</p>
+    {% if link.tags %}
+      <ul>
+      {% for tag in tags %}
+        <li>{{ tag }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+
+{% endfor %}
+</ul>
