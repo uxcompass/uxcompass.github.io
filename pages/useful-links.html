@@ -3,29 +3,29 @@ title: Useful links
 permalink: /useful-links/
 ---
 
-<ul>
+<p>We have curated a list of useful links which focus on both UX and Travel resources. If you have any suggestions to add to the list, please contact us through <a href="{{ site.social.github }}">Github</a>.</p>
+<ul class="list-collapse list-decorated">
 {% for section in site.data.links %}
   <h2>{{ section[0] }}</h2>
-
   {% assign link_array = section[1] %}
   {% for link in link_array %}
   {% assign tags = link.tags %}
   <li
+      class="row list-decorated__list-item"
       {% if link.tags %}
         data-tag="{% for tag in tags %}{{ tag | downcase }} {% endfor %}"
       {% endif %}
   >
-    <a href="{{ link.url }}">{{ link.title }}</a>
-    <p>{{ link.description }}</p>
+    <a href="{{ link.url }}" class="col s12 m3 u-collapse" >{{ link.title }}</a>
+    <small class="col s12 m6 u-collapse">{{ link.description }}</small>
     {% if link.tags %}
-      <ul>
+      <ul class="col s12 m3">
       {% for tag in tags %}
-        <li>{{ tag }}</li>
+        <li class="font_serif list-collapse list_inline comma-separated"><small><em>{{ tag }}</em></small></li>
       {% endfor %}
       </ul>
     {% endif %}
   </li>
   {% endfor %}
-
 {% endfor %}
 </ul>

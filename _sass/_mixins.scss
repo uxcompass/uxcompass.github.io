@@ -5,7 +5,7 @@
 
 
 // B
-@mixin box-shadow($top: 1px, $left: 0, $blur: 3px, $color: $c-gray300, $inset: false) {
+@mixin box-shadow($top: 1px, $left: 0, $blur: 3px, $color: $c-gray-light, $inset: false) {
   @if $inset {
     -webkit-box-shadow:inset $top $left $blur $color;
     -moz-box-shadow:inset $top $left $blur $color;

@@ -27,7 +27,7 @@ $c-gray700:             lighten($c-black, 20%);
 $c-gray600:             lighten($c-black, 34%);
 $c-gray500:             lighten($c-black, 50%);
 $c-gray400:             lighten($c-black, 66%);
-$c-gray300:             lighten($c-black, 82%);
+$c-gray-light:          lighten($c-black, 82%);
 $c-gray200:             lighten($c-black, 96%);
 
 $c-gray:                $c-gray500;
@@ -58,7 +58,7 @@ FONTS & TYPOGRAPHY
 $font-serif:            'Forum';
 $font-sans-serif:       'Lato';
 
-$font-nrml-size:        1em;
+$font-base:             1em;
 $font-small:            .75em;
 $font-large:            1.333em;
 $font-larger:           1.777em;
