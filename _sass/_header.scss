@@ -3,3 +3,36 @@
 .page-content {
   margin-top: 4rem;
 }
+
+.logo {
+
+  &:before,
+  &:after {
+    transform: scale(2, 0.5);
+  }
+  &:before {
+    content: 'O';
+  }
+
+  &:after {
+    content: 'OO';
+  }
+
+
+  &:hover {
+
+    &:before,
+    &:after {
+      @include animated();
+      transform: scale(1);
+    }
+
+    &:before {
+      content: 'H';
+    }
+
+    &:after {
+      content: 'ME';
+    }
+  }
+}
