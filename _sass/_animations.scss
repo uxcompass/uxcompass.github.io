@@ -18,6 +18,15 @@
   }
 }
 
+@keyframes spin{
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+
 @mixin fadeInUp {
   @include animated();
   animation-name: fadeInUp;
@@ -50,10 +59,10 @@
 }
 
 .animation-delay-short {
-  animation-delay: .3s;
+  animation-delay: .15s;
 }
 .animation-delay-long {
-  animation-delay: .5s;
+  animation-delay: .3s;
 }
 
 .animation-slow {

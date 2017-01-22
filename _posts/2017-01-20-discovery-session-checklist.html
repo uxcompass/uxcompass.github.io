@@ -1,0 +1,30 @@
+---
+layout: post
+title:  Product Discovery Session Checklist
+subtitle: Before designing, start asking
+intro: Ever picked up that design brief, Jira ticket or Trello task and thought "What?". When things are not clear, ask the right people the right questions before you even think about starting the task.
+date:   2017-01-20 12:21:00
+category: travel
+tags:
+ - work in progress
+checklist:
+  - Do you need a "Discovery Session"?
+  - Who need to be involved?
+  - What things are unclear?
+---
+
+<h2>The checklist</h2>
+
+<ul class="checklist">
+ {% for check in page.checklist %}
+  <li>
+    <input type="checkbox" id="check{{ forloop.index }}">
+    <label for="check{{ forloop.index }}">
+      <svg class="icon"><use xlink:href="#ic-check"/></svg>
+      Hey {{ check }}
+    </label>
+  </li>
+ {% endfor %}
+</ul>
+
+

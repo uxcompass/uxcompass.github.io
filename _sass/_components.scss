@@ -1,0 +1,26 @@
+.checklist {
+  list-style: none;
+  padding: 0;
+
+  .icon {
+    margin: $spacing $spacing-tight -6px 0;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input:checked + label {
+    color: $c-gray;
+    text-decoration: line-through;
+
+    .icon {
+      animation: spin .4s ease-in-out;
+      fill: rgba(0,200,100,1);
+    }
+  }
+
+  li {
+    margin-bottom: $spacing-tight;
+  }
+}
