@@ -1,7 +1,7 @@
 # UX Compass
 
 ## Getting started
-From the terminal run ```sudo npm install```
+From the terminal run ```npm install```
 
 Then run ```gulp```
 
